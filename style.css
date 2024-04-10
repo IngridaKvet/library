@@ -1,0 +1,243 @@
+html{
+    color: #404040;
+    font-family: "Public Sans", sans-serif;
+    background-color: #fff6fb;
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+.mainContainer{
+width: clamp(559px, 55%, 80%);
+margin: auto;
+margin-top: 92px;
+display: flex;
+flex-direction: column;
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+h1{
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+   
+}
+
+a { 
+  color: inherit;
+} 
+
+
+/**/
+.tableBanner{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    border-collapse: collapse;
+
+    
+}
+
+
+
+
+
+table{
+    width: 100%;
+    border: solid 2px #404040; 
+
+  border-collapse: collapse;
+
+}
+
+
+td{
+    height: 40px;
+   
+    padding: 0;
+    width: 140px;
+    border-right: solid 2px #404040; 
+    border-left: solid 2px #404040;
+    
+}
+
+
+
+tr:nth-child(even) {
+    background-color: #fdf4f4;
+  }
+
+tr:nth-child(uneven) {
+    background-color: #fff;
+}
+
+#nameBanner, #authorBanner, #pagesBanner,#readBanner{
+    font-weight: bold;
+    width: 100%;
+    border: #404040 2px solid;
+    border-radius: 10px 10px 0 0;
+    border-style: solid solid none solid;
+    display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+
+
+
+#nameBanner{ 
+background-color: #a2d2ff;
+
+margin-right: -2px;
+}
+
+#authorBanner{
+    background-color: #bde0ff;
+    margin-right: -2px;
+}
+    
+
+#pagesBanner{
+    background-color: #ffafcc;
+    margin-right: -2px;
+    
+}
+
+#readBanner{
+    background-color: #f8e2a8;
+
+}
+    
+
+button{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    justify-content: center;
+    gap: 12px;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    border: solid 2px #404040;
+    background-color: #bde0fe;
+    color: inherit; 
+    margin: auto;
+    margin-top: 50px;
+}
+
+button:hover{
+    background-color: #ffafcc;
+}
+
+button:active {
+    position: relative;
+    top: 2px;
+}
+
+#emptyLibrary{
+    border: solid #404040 2px;
+    border-radius: 10px;
+    background-color: #a2d2ff;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 10px;
+    border: solid 2px #404040;
+    width: 250px; 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* The Close Button */
+  .close {
+    position:absolute;
+    top:5px;
+    right: 10px;
+    
+
+
+    color: #aaa;
+ 
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  input{
+    display: block;
+  }
+
+  #addBookBtn{
+     
+
+    width: 150px;
+    height: 50px;
+  border-radius: 15px;
+    border: solid 2px #404040;
+    background-color: #bde0fe;
+    color: inherit; 
+    margin: auto;
+  }
+
+  .modal-content>p{
+    font-weight: bold;
+  }
+
+  input{
+    border: solid 2px #404040;
+    border-radius: 15px;
+    height: 25px;
+    padding-left: 10px;
+    width: 200px;
+  }
