@@ -22,24 +22,45 @@ console.log(theHobbit.info());
 
 
 
+
+
+
+
+
 console.log("HI")*/
 
 
-// Get the modal
-var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+// Checkbox handling
+document.addEventListener('DOMContentLoaded', () => {
+  const checkbox1 = document.getElementById('checkboxYes');
+  const checkbox2 = document.getElementById('checkboxNo');
 
-// When the user clicks on the button, open the modal
+  checkbox1.addEventListener('change', () => {
+    if (checkbox1.checked) {
+      checkbox2.checked = false;
+    }
+  });
+
+  checkbox2.addEventListener('change', () => {
+    if (checkbox2.checked) {
+      checkbox1.checked = false;
+    }
+  });
+});
+
+
+// Modal handling
+
+var modal = document.getElementById("modal");
+var btn = document.getElementById("addBookBtn");
+var span = document.getElementsByClassName("closeBtn")[0];
+
 btn.onclick = function() {
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }
@@ -50,6 +71,9 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+
 
 
 
