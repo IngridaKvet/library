@@ -103,7 +103,6 @@ a{
   border-left: solid 2px #404040;
   border-right: solid 2px #404040;
   background-color: #ffeeee;
-
 }
 
 .bookCardPagesContent{
@@ -113,7 +112,6 @@ a{
   border-radius: 0 0 20px 20px;
   padding-bottom: 50px;
 }
-
 
 .bookCardFooter{
   grid-area: 6/1/7/2;
@@ -146,8 +144,7 @@ a{
   color: inherit; 
   margin: auto ;
   font: inherit;
-  font-size: inherit;
-  
+  font-size: inherit;  
 }
 
 button:hover{
@@ -169,7 +166,7 @@ button:active {
   height: 100%; 
   background-color: rgba(0,0,0,0.4); 
   padding: 0 10px;
-  }
+}
   
 .modalContent {
   background-color: #fefefe;
@@ -232,8 +229,6 @@ input[type="text"] {
 
   .mainContainer{
     align-items: center;
-    padding: 0 5% 40px 5%;
-
-    
+    padding: 0 5% 40px 5%;    
   }
 }

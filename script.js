@@ -5,11 +5,6 @@ function Book(title, author, pages, isRead) {
   this.author = author;
   this.pages = pages;
   this.isRead = isRead;
-
-  this.info = function(){
-  let stringToOutput = this.title + " by " + this.author + ", " + this.pages + " pages," + this.isRead;
-  return stringToOutput
-  }
 }
 
 //Default Books
@@ -29,7 +24,7 @@ function addBookToLibrary(myLibrary) {
 
     const bookCardHeader = document.createElement('div');
     bookCardHeader.className = 'bookCardHeader';
-    bookCardHeader.textContent = book.title; // Set the title from the string array
+    bookCardHeader.textContent = book.title; 
 
     if (book.isRead) {
       bookCardHeader.classList.add('readBookHeader');
@@ -69,14 +64,12 @@ function addBookToLibrary(myLibrary) {
       book.isRead = !book.isRead;
       
       bookCardFooter.textContent = book.isRead ? 'Remove from read list' : 'Add to already read list';
-      // Update the header background color
+      
       if (book.isRead) {
         bookCardHeader.classList.add('readBookHeader');
         bookCardHeader.classList.remove('notReadBookHeader');
         bookCardFooter.classList.add('readBookFooter');
         bookCardFooter.classList.remove('notReadBookFooter');
-
-
       } else {
         bookCardHeader.classList.add('notReadBookHeader');
         bookCardHeader.classList.remove('readBookHeader');
@@ -158,34 +151,3 @@ bookForm.addEventListener('submit', function(event) {
   const arrayLength = myLibrary.length;
   addBookToLibrary(myLibrary.slice(arrayLength-1));
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
