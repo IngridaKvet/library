@@ -17,37 +17,10 @@
       <h1 class="pageHeadline">Library</h1>
     </header>
     <p class="description">This is a project from curriculum folloring the The Odin Project in which I'm making a library page using Object Constructors.
-    Here I was focusing on exploring layout responsiveness to different sizes, transformations and use of objects and storage.
+    Here I was focusing on exploring layout responsiveness to different sizes and use of objects.
     You can also view the <u><a href="https://github.com/IngridaKvet/library">Github repository</a></u> of this project.</p>
 
-    <section class="bookCardContainer">
-      <div class="bookCard">
-        <div class="bookCardHeader">Test testtesTest test testt Test testtesTest Test testtesTest </div>
-        <div class="bookCardAuthorTitle">Author</div>
-        <div class="bookCardAuthorContent">Test testtesTest test testt Test testtesTest test testt </div>
-        <div class="bookCardPagesTitle">Pages</div>
-        <div class="bookCardPagesContent">888</div>
-        <div class="bookCardFooter">djdjdjdjdjButonbutib</div>
-      </div>
-
-    <div class="bookCard">
-        <div class="bookCardHeader">dhfj</div>
-        <div class="bookCardAuthorTitle">Author</div>
-        <div class="bookCardAuthorContent">dhdhdhddhd</div>
-        <div class="bookCardPagesTitle">Pages</div>
-        <div class="bookCardPagesContent">888</div>
-        <div class="bookCardFooter">djdjdjdjdjButonbutib</div>
-    </div>
-
-    <div class="bookCard">
-        <div class="bookCardHeader">dhfj</div>
-        <div class="bookCardAuthorTitle">Author</div>
-        <div class="bookCardAuthorContent">dhdhdhddhd</div>
-        <div class="bookCardPagesTitle">Pages</div>
-        <div class="bookCardPagesContent">888</div>
-        <div class="bookCardFooter">djdjdjdjdjButonbutib</div>
-    </div>
-    </section>
+    <section class="bookCardContainer" id="bookCardContainer"></section>
 
     <button id="addBookBtn">
         <img src="img/add-tool-svgrepo-com.png" width="20" height="20"> 
@@ -66,7 +39,7 @@
       <div class="closeBtn">&times;</div>
       <p>Add a Book</p>
 
-      <form class="form" action="/action_page.php">
+      <form class="form" id="bookForm" action="/action_page.php">
         <div class="formInput">
         <label for="title">Title</label>
         <input type="text" id="title" name="title">

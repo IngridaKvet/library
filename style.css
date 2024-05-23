@@ -12,7 +12,7 @@ body{
 .mainContainer{
   width: clamp(300px, 45%, 60%);
   margin: auto;
-  margin-top: 92px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   text-align: justify;
@@ -44,7 +44,9 @@ a{
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  max-height: 550px;
+  overflow-y: scroll;
 }
 
 .bookCard{
@@ -68,11 +70,18 @@ a{
 
 .bookCardHeader{
   grid-area: 1/1/3/2;
-  background-color: #ffAfcc;
   border-radius: 20px;
   border: solid 2px #404040;
   padding: 10px 5px 46px 5px;
   height: 40px;
+}
+
+.readBookHeader{
+  background-color: #cfec78;
+}
+
+.notReadBookHeader{
+  background-color: #ffAfcc;
 }
 
 .bookCardAuthorTitle{
@@ -108,12 +117,19 @@ a{
 
 .bookCardFooter{
   grid-area: 6/1/7/2;
-  background-color: #A2d2ff;
-
   border-radius: 20px;
-
   border: solid 2px #404040;
+  color: inherit; 
+  font: inherit;
+  font-size: inherit;
+}
 
+.readBookFooter{
+  background-color: #f8e2a8;
+}
+
+.notReadBookFooter{
+  background-color: #a2d2ff;
 }
 
 #addBookBtn{
@@ -128,7 +144,9 @@ a{
   border: solid 2px #404040;
   background-color: #bde0fe;
   color: inherit; 
-  margin: auto;
+  margin: auto ;
+  font: inherit;
+  font-size: inherit;
   
 }
 
@@ -210,15 +228,12 @@ input[type="text"] {
   padding-left: 10px;
 }
 
-
-.modalContent p{
-  font-weight: bold;
-}
-
 @media only screen and (max-width: 600px) {
 
   .mainContainer{
     align-items: center;
-    padding: 0 5%;
+    padding: 0 5% 40px 5%;
+
+    
   }
 }
