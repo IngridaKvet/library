@@ -53,7 +53,7 @@ function addBookToLibrary(myLibrary) {
 
     if (book.isRead) {
       bookCardFooter.classList.add('readBookFooter');
-      bookCardFooter.textContent = 'Remove from read list';
+      bookCardFooter.textContent = 'Read!';
     } else {
       bookCardFooter.classList.add('notReadBookFooter');
       bookCardFooter.textContent = 'Add to already read list';
@@ -63,7 +63,7 @@ function addBookToLibrary(myLibrary) {
 
       book.isRead = !book.isRead;
       
-      bookCardFooter.textContent = book.isRead ? 'Remove from read list' : 'Add to already read list';
+      bookCardFooter.textContent = book.isRead ? 'Read!' : 'Add to already read list';
       
       if (book.isRead) {
         bookCardHeader.classList.add('readBookHeader');

@@ -10,7 +10,7 @@ body{
 }
 
 .mainContainer{
-  width: clamp(300px, 45%, 60%);
+  width: clamp(300px, 55%, 60%);
   margin: auto;
   margin-top: 40px;
   display: flex;
@@ -142,7 +142,7 @@ a{
   border: solid 2px #404040;
   background-color: #bde0fe;
   color: inherit; 
-  margin: auto ;
+  margin: 0 auto 40px auto;
   font: inherit;
   font-size: inherit;  
 }
