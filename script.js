@@ -26,6 +26,20 @@ function addBookToLibrary(myLibrary) {
     bookCardHeader.className = 'bookCardHeader';
     bookCardHeader.textContent = book.title; 
 
+    const deleteBtn = document.createElement('div');
+    deleteBtn.className = 'deleteBtn';
+    deleteBtn.innerHTML = '&times;';
+    bookCardHeader.appendChild(deleteBtn);
+
+    deleteBtn.addEventListener('click', () => {
+      bookCard.remove();
+    });
+
+
+
+
+
+
     if (book.isRead) {
       bookCardHeader.classList.add('readBookHeader');
     } else {
@@ -78,6 +92,13 @@ function addBookToLibrary(myLibrary) {
       }
     });
 
+
+
+
+
+
+
+
     bookCard.appendChild(bookCardHeader);
     bookCard.appendChild(bookCardAuthorTitle);
     bookCard.appendChild(bookCardAuthorContent);
@@ -113,13 +134,13 @@ checkbox2.addEventListener('change', () => {
 // Modal handling
 var modal = document.getElementById("modal");
 var btn = document.getElementById("addBookBtn");
-var span = document.getElementsByClassName("closeBtn")[0];
+var closeBtn = document.getElementsByClassName("closeBtn")[0];
 
 btn.onclick = function() {
 modal.style.display = "block";
 }
 
-span.onclick = function() {
+closeBtn.onclick = function() {
 modal.style.display = "none";
 }
 
